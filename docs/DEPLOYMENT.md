@@ -1,0 +1,2 @@
+# Deployment
+Build the backend image, deploy it behind TLS, set explicit CORS origins and a strong rotating `JWT_SECRET`, then run migrations before release. Deploy the admin static build behind authenticated admin access. Publish Flutter builds using platform signing. Use managed PostgreSQL/Supabase backups, private storage buckets with short-lived signed recording URLs, centralized logs, health probes, and monitoring for AzuraCast/LiveKit reachability.

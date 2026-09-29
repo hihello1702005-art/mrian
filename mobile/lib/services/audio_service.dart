@@ -1,0 +1,2 @@
+import 'package:audio_service/audio_service.dart'; import 'package:just_audio/just_audio.dart';
+class RadioAudioHandler extends BaseAudioHandler {final player=AudioPlayer(); Future<void> playLive(String url) async {await player.setUrl(url); await player.play();} @override Future<void> play()=>player.play(); @override Future<void> pause()=>player.pause(); @override Future<void> stop()=>player.stop();}

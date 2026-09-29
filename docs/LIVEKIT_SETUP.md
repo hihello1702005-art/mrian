@@ -1,0 +1,2 @@
+# LiveKit setup
+Create a LiveKit project, set `LIVEKIT_URL`, API key and secret in the backend, and restrict token issuance to authenticated RJ/ADMIN roles. The app requests `POST /api/livekit/token`, receives a temporary room-scoped token, and joins with microphone permission. A production broadcast bridge must publish/mix the LiveKit audio to an AzuraCast DJ/source endpoint; do not put the DJ password or LiveKit secret in Flutter.

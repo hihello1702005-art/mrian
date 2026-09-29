@@ -1,0 +1,2 @@
+-- Seed operational data through the API or Supabase migration after authentication users are provisioned.
+-- Demo Mode intentionally keeps seed data in backend/app/services/demo_data.py.

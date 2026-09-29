@@ -1,0 +1,2 @@
+# Setup
+Copy each `.env.example` to `.env`; keep `DEMO_MODE=true` for a no-credentials run. Create PostgreSQL database and execute `database/schema.sql`, then launch the backend. Set the admin API base URL and run Vite. Install Flutter then run the mobile project. Add Firebase `google-services.json`/`GoogleService-Info.plist` only outside git and initialize messaging in the platform host before production notifications. Configure Supabase RLS so users only access their own favorites/listener sessions and public users only read published shows/recordings.
