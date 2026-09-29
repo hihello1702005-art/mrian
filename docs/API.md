@@ -1,0 +1,2 @@
+# API
+Base path: `/api`. Public: `GET /health`, `/radio/live`, `/radio/station`, `/radio/now-playing`, `/shows`, `/shows/{id}`, `/schedule`, `/recordings`, `/recordings/{id}`. Auth: `POST /auth/register`, `/auth/login`, `GET /auth/me`. Bearer-token endpoints: favorites; RJ/ADMIN start/end a show, create recordings, and request `/livekit/token`; ADMIN manages shows/schedules, sends notifications, and reads analytics. Invalid bodies return 422, missing sessions 401, denied roles 403, absent records 404, and unavailable station integrations 503.

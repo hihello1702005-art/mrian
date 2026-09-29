@@ -1,0 +1,2 @@
+# Architecture
+Flutter calls FastAPI only. FastAPI owns JWT authorization, service credentials, AzuraCast API calls, recording metadata, and LiveKit token minting. AzuraCast remains the station authority for stream/playlists/automation/status; it is not replaced by a standalone Icecast design. RJs authenticate, request a short-lived token, join a LiveKit room, and deliver a mixed/program source to AzuraCast. Recording workers upload media to Supabase Storage (or compatible storage), write `recordings`, and publish the archive.
